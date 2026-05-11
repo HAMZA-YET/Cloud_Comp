@@ -1,51 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Cloud Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudSphere | Cloud Computing Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <h1>My Cloud Website</h1>
-    <p>Hosted using GitHub Pages</p>
+<header class="navbar">
+    <div class="logo">CloudSphere</div>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-</nav>
-
 <section class="hero">
-    <h2>Welcome to My Cloud Computing Website</h2>
-    <p>
-        This website is created as part of a cloud computing practical lab.
-        It demonstrates how a simple static website can be hosted on a cloud-based platform using GitHub Pages.
-    </p>
-    <a class="btn" href="about.html">Learn More</a>
+    <div class="hero-content">
+        <span class="badge">Cloud Computing Lab Project</span>
+        <h1>Deploying Static Websites on the Cloud</h1>
+        <p>
+            A professional cloud-based website hosted using GitHub Pages.
+            This project demonstrates how HTML and CSS files can be deployed online
+            through a cloud hosting platform.
+        </p>
+        <div class="hero-buttons">
+            <a href="about.html" class="btn primary">Explore Project</a>
+            <a href="contact.html" class="btn secondary">Contact Me</a>
+        </div>
+    </div>
 </section>
 
-<section class="cards">
-    <div class="card">
-        <h3>Cloud Hosting</h3>
-        <p>Website files are stored online and accessed through the internet.</p>
-    </div>
+<section class="features">
+    <h2>Website Features</h2>
+    <p class="section-text">This project shows the core ideas of cloud deployment and static website hosting.</p>
 
-    <div class="card">
-        <h3>GitHub Pages</h3>
-        <p>GitHub Pages allows free hosting for HTML, CSS, and JavaScript websites.</p>
-    </div>
+    <div class="grid">
+        <div class="card">
+            <h3>Cloud Hosting</h3>
+            <p>The website is published online and can be accessed from anywhere using a public URL.</p>
+        </div>
 
-    <div class="card">
-        <h3>Static Website</h3>
-        <p>This website uses simple HTML and CSS without any backend server.</p>
+        <div class="card">
+            <h3>GitHub Pages</h3>
+            <p>GitHub Pages is used as a free cloud hosting platform for static web projects.</p>
+        </div>
+
+        <div class="card">
+            <h3>Static Website</h3>
+            <p>The website is built using HTML and CSS without requiring a backend server.</p>
+        </div>
+    </div>
+</section>
+
+<section class="stats">
+    <div>
+        <h2>3</h2>
+        <p>Web Pages</p>
+    </div>
+    <div>
+        <h2>100%</h2>
+        <p>Cloud Hosted</p>
+    </div>
+    <div>
+        <h2>24/7</h2>
+        <p>Online Access</p>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2026 My Cloud Website | Created by Muhammad Hamza</p>
+    <p>© 2026 CloudSphere | Created by Muhammad Hamza</p>
 </footer>
 
 </body>
