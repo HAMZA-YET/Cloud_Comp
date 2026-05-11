@@ -1,55 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CloudLab | Contact</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+.contact-modern {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
 
-<header>
-    <div class="logo">CloudLab</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html" class="active">Contact</a>
-    </nav>
-</header>
+.profile-card,
+.message-card {
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
 
-<section class="page-title">
-    <h1>Contact</h1>
-    <p>Student and project information</p>
-</section>
+.profile-card {
+    text-align: center;
+    border-top: 8px solid #6c63ff;
+}
 
-<section class="contact">
-    <div class="contact-card">
-        <h2>Student Details</h2>
-        <p><strong>Name:</strong> Muhammad Hamza Shakeel</p>
-        <p><strong>Student ID:</strong> 2417295</p>
-        <p><strong>Email:</strong> mhha10234@gmail.com</p>
-        <p><strong>Course:</strong> Cloud Computing</p>
-        <p><strong>Project:</strong> Static Website Deployment</p>
-        <p><strong>Platform:</strong> GitHub Pages</p>
-    </div>
+.avatar {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #6c63ff, #ff6584);
+    color: white;
+    font-size: 34px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
 
-    <div class="contact-card">
-        <h2>Project Message</h2>
-        <p>
-            This website was developed as a cloud computing practical project
-            to demonstrate static website deployment using GitHub Pages.
-        </p>
+.profile-card h2 {
+    color: #2d2a55;
+    margin-bottom: 10px;
+}
 
-        <p>
-            The project highlights how HTML and CSS files can be hosted on a
-            cloud platform and accessed publicly through the internet.
-        </p>
-    </div>
-</section>
+.student-id {
+    color: #777;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
 
-<footer>
-    <p>© 2026 CloudLab | Created by Muhammad Hamza Shakeel</p>
-</footer>
+.info-box {
+    background: #f8f9ff;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: left;
+}
 
-</body>
-</html>
+.info-box p {
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.message-card {
+    border-top: 8px solid #ff6584;
+}
+
+.message-card h2 {
+    color: #6c63ff;
+    margin-bottom: 20px;
+}
+
+.message-card p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+    .contact-modern {
+        grid-template-columns: 1fr;
+    }
+}
