@@ -1,42 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact - My Cloud Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | CloudSphere</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <h1>Contact Me</h1>
-    <p>Get in touch for cloud computing lab work</p>
+<header class="navbar">
+    <div class="logo">CloudSphere</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
 </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-</nav>
+<section class="page-header">
+    <h1>Contact</h1>
+    <p>Project information and student details.</p>
+</section>
 
-<section class="content">
-    <h2>Contact Information</h2>
-
-    <div class="contact-box">
+<section class="contact-section">
+    <div class="contact-info">
+        <h2>Student Details</h2>
         <p><strong>Name:</strong> Muhammad Hamza</p>
         <p><strong>Email:</strong> student@email.com</p>
         <p><strong>Course:</strong> Cloud Computing</p>
+        <p><strong>Project:</strong> Static Website Deployment</p>
         <p><strong>Platform:</strong> GitHub Pages</p>
     </div>
 
-    <h2>Message</h2>
-    <p>
-        This contact page is part of the cloud computing website project.
-        It shows basic contact details in a clean and professional layout.
-    </p>
+    <div class="contact-form">
+        <h2>Send Message</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="button">Submit</button>
+        </form>
+    </div>
 </section>
 
 <footer>
-    <p>&copy; 2026 My Cloud Website | Created by Muhammad Hamza</p>
+    <p>© 2026 CloudSphere | Created by Muhammad Hamza</p>
 </footer>
 
 </body>
